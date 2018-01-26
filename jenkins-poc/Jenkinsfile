@@ -1,15 +1,4 @@
-pipeline {
-	agent any
-	
-	stages {
-		stage('Build') {
-			steps {
-			
-				@Library("groovy-pipeline")
-				pipline() {
-					projectName = "Project"
-				}
-			}				
-		}	
-	}		
+@Library("groovy-pipeline")
+pipline() {
+	projectName = "Project"
 }
