@@ -1,12 +1,12 @@
-@Library("groovy-pipeline")
-import uk.co.olimor.jenkins_poc_groovy.Job;
-
 pipeline {
 	agent any
 	
 	stages {
 		stage('Build') {
 			steps {
+				@Library("groovy-pipeline")
+				import uk.co.olimor.jenkins_poc_groovy.Job;
+
 				new Job().build();
 			}				
 		}	
