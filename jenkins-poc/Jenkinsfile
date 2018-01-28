@@ -1,13 +1,4 @@
 @Library("groovy-pipeline")
-
 pipeline {
-	agent any
 	
-	stages {
-		stage('Build') {
-			steps {
-				new Job().build();
-			}				
-		}	
-	}		
 }
