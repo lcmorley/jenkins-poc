@@ -1,4 +1,7 @@
 @Library("groovy-pipeline")
-mypipeline {
+node {
+	stage='Build' 
 	
+	mypipeline {
+	}
 }
