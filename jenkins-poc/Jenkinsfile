@@ -1,3 +1,4 @@
 @Library("groovy-pipeline") _
 mypipeline {
+	projectName='Test Project'
 }
